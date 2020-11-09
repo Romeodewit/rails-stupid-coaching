@@ -1,0 +1,11 @@
+<div class="container mx-auto" style="max-width: 600px">
+  <h1 class="text-center py-4">Stupid Coaching</h1>
+
+  <div class="container">
+    <p>Ask your coach anything:</p>
+    <form action="/answer" method="get" class="form-group d-flex">
+      <input type="text" name="question" value=" <%= params[:question] %>" class="form-control">
+      <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+  </div>
+</div>

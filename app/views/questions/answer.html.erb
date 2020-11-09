@@ -1,0 +1,17 @@
+<div class="container mx-auto" style="max-width: 600px">
+  <h1 class="d-flex justify-content-center py-4">Stupid Coaching</h1>
+  <div class="bg-light">
+    <blockquote class="blockquote">
+      <p class><%= params[:question] %></p>
+      <% if params[:question][-1] == "?" %>
+        <p>Silly question, get dressed and go to work!</p>
+      <% elsif params[:question].downcase == "i am going to work!" %>
+        <p>Great!</p>
+      <% else %>
+        <p>I don't care, get dressed and go to work!</p>
+      <% end %>
+    </blockquote>
+  </div>
+
+<a href="/ask">Ask a new question</a>
+</div>
